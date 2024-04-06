@@ -1,8 +1,13 @@
 import React from "react";
-// import Style from "./style.module.scss";
+import Style from "./style.module.scss";
+import CartItems from "./../../Components/CartItems/index";
 
 function Cart() {
-  return <div>Cart</div>;
+  return (
+    <div className={Style.Cart}>
+      <CartItems />
+    </div>
+  );
 }
 
 export default Cart;

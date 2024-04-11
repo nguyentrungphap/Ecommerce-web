@@ -7,7 +7,7 @@ function RelatedProducts() {
     <div className={Style.RelatedProducts}>
       <h1>Telated Products</h1>
       <hr />
-      <div className={Style.Item}>
+      <div className={Style.RelatedProductsItem}>
         {DataProduct.map((item, i) => {
           return (
             <Item

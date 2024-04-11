@@ -7,9 +7,9 @@ import ProductDetails from "../../Components/ProductDetails/index";
 import DescriptionBox from "../../Components/DescriptionBox/index.jsx";
 import RelatedProducts from "../../Components/RelatedProducts/index.jsx";
 function Product() {
-  const { AllProduct } = useContext(ShopContext);
+  const { all_product } = useContext(ShopContext);
   const { productId } = useParams();
-  const product = AllProduct.find((e) => e.id === Number(productId));
+  const product = all_product.find((e) => e.id === Number(productId));
   return (
     <div className="Product">
       <Breadcrums product={product} />

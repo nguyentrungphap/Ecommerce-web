@@ -9,9 +9,9 @@ function Hero() {
       <div className={Style.HeroLeft}>
         <h2>New Arrivals only</h2>
         <div>
-          <div className="HandIcon">
+          <div className={Style.HeroHandIcon}>
             <p>new</p>
-            <img src={Style.HeroHandIcon} alt="" />
+            <img src={HandIcon} alt="" />
           </div>
           <p>collections</p>
           <p>for everyone</p>

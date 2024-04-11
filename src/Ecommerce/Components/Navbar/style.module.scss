@@ -1,8 +1,9 @@
 .Navbar {
   display: flex;
   justify-content: space-around;
-  padding: 16px;
+  padding: 16px 0px;
   box-shadow: 0 1px 3px -2px black;
+  align-items: center;
   .NavLogo {
     display: flex;
     align-items: center;
@@ -69,5 +70,103 @@
     color: white;
     background-color: red;
     border-radius: 50%;
+  }
+  .NavDropDown {
+    display: none;
+  }
+}
+@media (max-width: 1280px) {
+  .Navbar {
+    padding: 12px 50px;
+    .NavLogo {
+      img {
+        width: 40%;
+      }
+      p {
+        font-size: 25px;
+      }
+    }
+    .NavMenu {
+      gap: 30px;
+      font-size: 16px;
+    }
+    .NavLogin {
+      gap: 30px;
+      button {
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+      }
+    }
+    .CartCount {
+      margin-left: -40px;
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .Navbar {
+    padding: 12px 30px;
+
+    .NavMenu {
+      gap: 25px;
+      font-size: 14px;
+    }
+    .NavLogin {
+      button {
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+      }
+      img {
+        width: 30px;
+      }
+    }
+    .CartCount {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .Navbar {
+    padding: 10px 0px;
+    .NavDropDown {
+      display: block;
+      width: 30px;
+      rotate: -90deg;
+      transition: 0.5s;
+    }
+    .NavMenu {
+      display: none;
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      background-color: white;
+      justify-content: center;
+      top: 80px;
+    }
+    .MenuVisible {
+      display: flex;
+    }
+    .NavDropDown.Open {
+      transform: rotate(90deg);
+    }
+  }
+}
+@media (max-width: 500px) {
+  .Navbar {
+    padding: 8px 0px;
+    gap: 0;
+    .NavLogo {
+      transform: scale(0.8);
+    }
+    .NavMenu {
+      height: 70px;
+      top: 50px;
+    }
+    .NavLogin {
+      transform: scale(0.8);
+    }
   }
 }

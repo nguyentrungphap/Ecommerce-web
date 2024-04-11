@@ -52,3 +52,44 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .Footer {
+    gap: 20px;
+    .FooterLogo {
+      align-items: end;
+      gap: 10px;
+      img {
+        width: 40px;
+      }
+      p {
+        font-size: 25px;
+      }
+    }
+    .FooterLink {
+      gap: 10px;
+      font-size: 14px;
+    }
+    .FooterSocialIcon {
+      img {
+        width: 22px;
+      }
+      .FooterIconContainer {
+        padding: 10px;
+        padding-bottom: 6px;
+        background-color: #fbfbfb;
+        border: 1px solid #ebebeb;
+      }
+    }
+    .FooterCopyright {
+      font-size: 13px;
+      hr {
+        width: 80%;
+        border: none;
+        border-radius: 10px;
+        height: 3px;
+        background: #c7c7c7;
+      }
+    }
+  }
+}

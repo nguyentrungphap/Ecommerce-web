@@ -15,15 +15,65 @@
     border-radius: 10px;
     background: #252525;
   }
-  .NewCollectionsItem {
+  .Collections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
-    display: flex;
     gap: 30px;
   }
 }
-.Collections {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 50px;
-  gap: 30px;
+
+@media (max-width: 1280px) {
+  .NewCollections {
+    h1 {
+      font-size: 40px;
+    }
+    hr {
+      width: 160px;
+      height: 4px;
+    }
+    .Collections {
+      margin-top: 30px;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .NewCollections {
+    h1 {
+      font-size: 30px;
+    }
+    hr {
+      width: 120px;
+      height: 3px;
+    }
+    .Collections {
+      margin-top: 20px;
+      gap: 15px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .NewCollections {
+    gap: 6px;
+    h1 {
+      font-size: 20px;
+    }
+    hr {
+      width: 100px;
+    }
+    .Collections {
+      gap: 5px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .NewCollections {
+    .Collections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  }
 }

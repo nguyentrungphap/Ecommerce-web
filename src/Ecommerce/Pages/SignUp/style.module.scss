@@ -59,3 +59,60 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  .SignUp {
+    padding-top: 50px;
+    .Container {
+      max-width: 500px;
+      max-height: 500px;
+      width: auto;
+      h1 {
+        margin: 10px 0px;
+      }
+      button {
+        width: 100%;
+      }
+      .Fields {
+        gap: 20px;
+        margin-top: 20px;
+        input {
+          height: 65px;
+          width: 93%;
+        }
+      }
+      .Login {
+        font-size: 16px;
+        span {
+          color: #ff4141;
+          font-weight: 600;
+        }
+      }
+      .Agree {
+        gap: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .SignUp {
+    .Container {
+      padding: 20px 30px;
+      h1 {
+        font-size: 24px;
+      }
+      button {
+        height: 50px;
+        font-size: 16px;
+      }
+      .Fields {
+        margin-top: 20px;
+        input {
+          height: 50px;
+          width: 93%;
+        }
+      }
+    }
+  }
+}
